@@ -41,7 +41,8 @@ namespace all_cards
                 //     items[secondIndex] = firstValue
                 deck[secondIndex] = firstValue;
             }
-
+            Console.WriteLine(deck[0]);
+            Console.WriteLine(deck[1]);
 
 
         }
