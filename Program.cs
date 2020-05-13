@@ -32,11 +32,14 @@ namespace all_cards
                 var secondIndex = rnd.Next(firstIndex);
                 //   Now swap the values at firstIndex and secondIndex by doing this:
                 //     firstValue = the value from items[firstIndex]
-                firstValue = deck[firstIndex];
+                var firstValue = deck[firstIndex];
 
                 //     secondValue = the value from items[secondIndex]
+                var secondValue = deck[secondIndex];
                 //     items[firstIndex] = secondValue
+                deck[firstIndex] = secondValue;
                 //     items[secondIndex] = firstValue
+                deck[secondIndex] = firstValue;
             }
 
 
