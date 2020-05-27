@@ -20,31 +20,29 @@ namespace all_cards
                     var currentRank = ranks[rankIndex];
                     var currentSuit = suits[suitIndex];
                     var currentCard = $"The {currentRank} of {currentSuit}";
+
                     deck.Add(currentCard);
                 }
             }
+
             var n = 52;
             // for firstIndex from n - 1 down to 1 do:
             for (var firstIndex = n - 1; firstIndex >= 1; firstIndex--)
             {
                 Random rnd = new Random();
-                //   secondIndex = random integer that is greater than or equal to 0 and LESS than firstIndex
+
                 var secondIndex = rnd.Next(firstIndex);
-                //   Now swap the values at firstIndex and secondIndex by doing this:
-                //     firstValue = the value from items[firstIndex]
+
                 var firstValue = deck[firstIndex];
 
-                //     secondValue = the value from items[secondIndex]
                 var secondValue = deck[secondIndex];
-                //     items[firstIndex] = secondValue
+
                 deck[firstIndex] = secondValue;
-                //     items[secondIndex] = firstValue
                 deck[secondIndex] = firstValue;
             }
+
             Console.WriteLine(deck[0]);
             Console.WriteLine(deck[1]);
-
-
         }
     }
 }
