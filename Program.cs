@@ -8,7 +8,6 @@ namespace all_cards
     {
         static void Main(string[] args)
         {
-            //declared ranks and suits for deck
             var ranks = new List<string>() { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
             var suits = new List<string>() { "Clubs", "Spades", "Diamonds", "Hearts" };
             var deck = new List<string>();
@@ -26,7 +25,7 @@ namespace all_cards
             }
 
             var n = 52;
-            // for firstIndex from n - 1 down to 1 do:
+
             for (var firstIndex = n - 1; firstIndex >= 1; firstIndex--)
             {
                 Random rnd = new Random();
